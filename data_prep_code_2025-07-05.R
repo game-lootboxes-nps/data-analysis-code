@@ -31,12 +31,8 @@ data1$daily_date <- as.Date(data1$daily_date, format = "%Y-%m-%d")
 data2$daily_date <- as.Date(data2$daily_date, format = "%Y-%m-%d")
 
 # drop columns we don't need
-data1 = subset(data1, select = -c(X, uid, ranks_gained, viplvl, dmo, mission_battlestart,
-                                  guild_message, friend_thank, friend_request_sent, friend_invite,
-                                  error_client, error_network, ad_videofinished, survey_name) )
-data2 = subset(data2, select = -c(X, uid, ranks_gained, viplvl, dmo, mission_battlestart,
-                                  guild_message, friend_thank, friend_request_sent, friend_invite,
-                                  error_client, error_network, ad_videofinished, survey_name) )
+data1 = subset(data1, select = -c(X, uid, ranks_gained, dmo, survey_name) )
+data2 = subset(data2, select = -c(X, uid, ranks_gained, dmo, survey_name) )
 
 # narrow to relevant time periods
 data1 <- filter(data1,

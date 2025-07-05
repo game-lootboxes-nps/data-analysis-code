@@ -1,4 +1,4 @@
-# data-analysis-code
+# Data processing and analysis code for the study "When players dislike but keep playing: Net Promoter Score inversion as a marker for problematic digital use"
 
 This repository contains the code used to extract, aggregate, and analyze the dataset for the study "When players dislike but keep playing: Net Promoter Score inversion as a marker for problematic digital use".
 
